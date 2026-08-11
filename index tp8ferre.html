@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lautaro Ferré — Desarrollador Backend Junior</title>
+  <meta name="description" content="Portfolio profesional de Lautaro Benjamín Ferré, estudiante de Técnico en Programación (IPET 247), enfocado en desarrollo backend y bases de datos.">
+
+  <!-- Tipografías: mono para títulos (identidad de código/consulta SQL), sans para lectura -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===================== NAV ===================== -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#inicio" class="nav__brand">
+        <span class="nav__prompt">&gt;</span> lautaro<span class="nav__cursor">_</span>
+      </a>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav__menu" id="navMenu">
+        <a href="#inicio" class="nav__link">Inicio</a>
+        <a href="#habilidades" class="nav__link">Habilidades</a>
+        <a href="#proyectos" class="nav__link">Proyectos</a>
+        <a href="#contacto" class="nav__link">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===================== HERO / INICIO ===================== -->
+    <section class="hero" id="inicio">
+      <div class="hero__inner">
+
+        <div class="terminal" role="img" aria-label="Terminal simulando una consulta SQL que devuelve el perfil de Lautaro Ferré">
+          <div class="terminal__bar">
+            <span class="terminal__dot terminal__dot--red"></span>
+            <span class="terminal__dot terminal__dot--yellow"></span>
+            <span class="terminal__dot terminal__dot--green"></span>
+            <span class="terminal__title">perfil.sql</span>
+          </div>
+          <div class="terminal__body">
+            <p class="terminal__line">
+              <span class="tk-kw">SELECT</span> * <span class="tk-kw">FROM</span> desarrolladores
+            </p>
+            <p class="terminal__line"><span class="tk-kw">WHERE</span> nombre = <span class="tk-str">'Lautaro Benjamín Ferré'</span>;</p>
+            <p class="terminal__line terminal__line--typed" id="typedLine"><span class="terminal__caret" id="caret">▌</span></p>
+          </div>
+        </div>
+
+        <div class="hero__content">
+          <p class="eyebrow">Córdoba Capital, Argentina</p>
+          <h1 class="hero__title">Lautaro Benjamín Ferré</h1>
+          <p class="hero__role">Desarrollador/a Backend Junior · Programación y Bases de Datos</p>
+          <p class="hero__bio">
+            Estudiante de Técnico en Programación en el IPET N.º 247 "Ing. Carlos A. Cassaffousth",
+            con finalización prevista para 2026. Me apasiona el desarrollo backend y el trabajo con
+            bases de datos, y disfruto especialmente resolver problemas lógicos mediante programación.
+            Busco mi primera oportunidad laboral para aplicar mis conocimientos, adquirir experiencia
+            profesional y seguir creciendo como desarrollador.
+          </p>
+          <div class="hero__actions">
+            <a href="#proyectos" class="btn btn--primary">Ver proyectos</a>
+            <a href="#contacto" class="btn btn--ghost">Contactarme</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== HABILIDADES ===================== -->
+    <section class="skills" id="habilidades">
+      <div class="section__inner">
+        <p class="eyebrow">Stack tecnológico</p>
+        <h2 class="section__title">Habilidades</h2>
+        <p class="section__lead">
+          Tecnologías, lenguajes y herramientas que uso para construir y mantener software,
+          con foco en lógica backend y manejo de datos.
+        </p>
+
+        <div class="skills__grid">
+          <div class="skill-card">
+            <span class="skill-card__type">lang</span>
+            <h3 class="skill-card__name">Python</h3>
+            <p class="skill-card__desc">Lógica de programación, scripts y automatización. Certificación propia.</p>
+          </div>
+          <div class="skill-card">
+            <span class="skill-card__type">query</span>
+            <h3 class="skill-card__name">SQL</h3>
+            <p class="skill-card__desc">Diseño de consultas, relaciones e integridad de datos.</p>
+          </div>
+          <div class="skill-card">
+            <span class="skill-card__type">db</span>
+            <h3 class="skill-card__name">MySQL</h3>
+            <p class="skill-card__desc">Modelado y administración de bases de datos relacionales.</p>
+          </div>
+          <div class="skill-card">
+            <span class="skill-card__type">vcs</span>
+            <h3 class="skill-card__name">Git</h3>
+            <p class="skill-card__desc">Control de versiones, ramas y commits organizados.</p>
+          </div>
+          <div class="skill-card">
+            <span class="skill-card__type">host</span>
+            <h3 class="skill-card__name">GitHub</h3>
+            <p class="skill-card__desc">Repositorios públicos, documentación y despliegue con Pages.</p>
+          </div>
+          <div class="skill-card">
+            <span class="skill-card__type">markup</span>
+            <h3 class="skill-card__name">HTML5</h3>
+            <p class="skill-card__desc">Estructura semántica de sitios y aplicaciones web.</p>
+          </div>
+          <div class="skill-card">
+            <span class="skill-card__type">style</span>
+            <h3 class="skill-card__name">CSS3</h3>
+            <p class="skill-card__desc">Maquetado responsive y diseño de interfaces.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROYECTOS ===================== -->
+    <section class="projects" id="proyectos">
+      <div class="section__inner">
+        <p class="eyebrow">El núcleo del trabajo</p>
+        <h2 class="section__title">Proyectos destacados</h2>
+        <p class="section__lead">
+          Dos proyectos que respaldan mi perfil: uno enfocado en backend y bases de datos,
+          y este mismo sitio como evidencia de despliegue en producción.
+        </p>
+
+        <!-- Proyecto 1: Backend / Base de datos -->
+        <article class="project project--featured">
+          <div class="project__tag">Backend · Base de datos</div>
+          <h3 class="project__title">Sistema de Gestión de Estacionamiento</h3>
+          <p class="project__desc">
+            Sistema académico para la administración de un estacionamiento: registro y control
+            de vehículos, ocupación de plazas y emisión de tickets de entrada y salida. Aplica
+            diseño de base de datos relacional y lógica de programación para resolver una
+            problemática real de gestión de datos.
+          </p>
+
+          <div class="project__grid">
+            <div class="project__media">
+              <div class="shot-placeholder">
+                <span class="shot-placeholder__icon">🖥</span>
+                <p><strong>Captura pendiente</strong></p>
+                <p>Agregá acá una imagen de la interfaz o consola del sistema
+                  (<code>assets/estacionamiento-captura.png</code>) y reemplazá este bloque
+                  por una etiqueta <code>&lt;img&gt;</code>.</p>
+              </div>
+            </div>
+
+            <div class="project__diagram">
+              <p class="project__diagram-label">Diagrama de base de datos (propuesto)</p>
+              <svg viewBox="0 0 460 300" xmlns="http://www.w3.org/2000/svg" role="img"
+                   aria-label="Diagrama entidad-relación con las tablas Vehiculos, Plazas y Tickets">
+                <!-- Vehiculos -->
+                <g>
+                  <rect x="10" y="10" width="150" height="110" rx="6" class="erd-box"/>
+                  <rect x="10" y="10" width="150" height="28" rx="6" class="erd-head"/>
+                  <text x="85" y="29" class="erd-title">vehiculos</text>
+                  <text x="20" y="56" class="erd-field">PK id_vehiculo</text>
+                  <text x="20" y="74" class="erd-field">patente</text>
+                  <text x="20" y="92" class="erd-field">tipo_vehiculo</text>
+                  <text x="20" y="110" class="erd-field">titular</text>
+                </g>
+                <!-- Plazas -->
+                <g>
+                  <rect x="300" y="10" width="150" height="92" rx="6" class="erd-box"/>
+                  <rect x="300" y="10" width="150" height="28" rx="6" class="erd-head"/>
+                  <text x="375" y="29" class="erd-title">plazas</text>
+                  <text x="310" y="56" class="erd-field">PK id_plaza</text>
+                  <text x="310" y="74" class="erd-field">numero</text>
+                  <text x="310" y="92" class="erd-field">estado</text>
+                </g>
+                <!-- Tickets -->
+                <g>
+                  <rect x="155" y="180" width="150" height="110" rx="6" class="erd-box"/>
+                  <rect x="155" y="180" width="150" height="28" rx="6" class="erd-head"/>
+                  <text x="230" y="199" class="erd-title">tickets</text>
+                  <text x="165" y="226" class="erd-field">PK id_ticket</text>
+                  <text x="165" y="244" class="erd-field">FK id_vehiculo</text>
+                  <text x="165" y="262" class="erd-field">FK id_plaza</text>
+                  <text x="165" y="280" class="erd-field">hora_entrada</text>
+                </g>
+                <!-- relaciones -->
+                <line x1="85" y1="120" x2="220" y2="180" class="erd-line"/>
+                <line x1="375" y1="102" x2="240" y2="180" class="erd-line"/>
+              </svg>
+            </div>
+          </div>
+
+          <div class="project__links">
+            <a href="https://github.com/ferrebenjamin/ferrerepositorionuevo" target="_blank" rel="noopener noreferrer" class="btn btn--small">
+              Ver repositorio →
+            </a>
+          </div>
+        </article>
+
+        <!-- Proyecto 2: CV Web -->
+        <article class="project">
+          <div class="project__tag">Frontend · Despliegue</div>
+          <h3 class="project__title">CV Web — Identidad Digital Profesional</h3>
+          <p class="project__desc">
+            Diseño y desarrollo de un sitio web estático con HTML5, CSS3 y JavaScript, versionado
+            en Git/GitHub y publicado mediante GitHub Pages. Este mismo portfolio es la evolución
+            directa de ese trabajo: mismo flujo de versionado y despliegue en producción.
+          </p>
+          <div class="project__links">
+            <a href="https://github.com/ferrebenjamin/tp14ferre" target="_blank" rel="noopener noreferrer" class="btn btn--small">
+              Ver repositorio →
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACTO ===================== -->
+    <section class="contact" id="contacto">
+      <div class="section__inner">
+        <p class="eyebrow">¿Trabajamos juntos?</p>
+        <h2 class="section__title">Contacto</h2>
+        <p class="section__lead">
+          Disponible para mi primera oportunidad laboral en desarrollo backend y gestión de datos.
+          Español nativo, disponible para trabajar y seguir capacitándome de forma constante.
+        </p>
+
+        <div class="contact__grid">
+          <a href="mailto:programacionferre2212@gmail.com" class="contact__card">
+            <span class="contact__label">Email</span>
+            <span class="contact__value">programacionferre2212@gmail.com</span>
+          </a>
+          <a href="https://github.com/ferrebenjamin" target="_blank" rel="noopener noreferrer" class="contact__card">
+            <span class="contact__label">GitHub</span>
+            <span class="contact__value">github.com/ferrebenjamin</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="section__inner footer__inner">
+      <p>© 2026 Lautaro Benjamín Ferré — IPET N.º 247 "Ing. Carlos A. Cassaffousth"</p>
+      <a href="#inicio" class="footer__top">Volver arriba ↑</a>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
